@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+   
+}
+
+/* --------------------------------------------- Background colors */
+.navbar-bg {
+    background-color: #0D0500;
+    border-bottom: 2px solid #F20530;
+}
+
+.hero-bg {
+    background-color: #026873;
+    display: flex;
+}
+.main-bg {
+    background-color: #026873;
+    display: flex;
+}
+
+/* --------------------------------------------- Navbar */
+
+#title, .nav-link {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+}
+
+.navbar a {
+    color: #fff;
+}
+
+.burger-menu {
+    color: #fff;
+}
+
+.content-index {
+    background-color: #F2D541;
+    border: 6px solid;
+    border-radius: 10px;
+    margin: 3%;
+    height: auto;
+    padding: 20px;
+}
+
+#drop-bg-1 {
+    background-color: #F2D541;
+}
+
+#drop-bg-2 {
+    background-color: #004a52;
+}
+
+#drop-bg-3 {
+    background-color: #F20530;
+}
+
+#index-Portfolio-btn {
+    color: #fff;
+    border: 2px solid #000;
+    background-color: #004a52;
+    margin: 0 auto;
+    text-shadow: 3px 5px 5px #000;
+}
+
+/* --------------------------------------------- Footer */
+
+footer {
+    background-color: #0D0500;
+    border-top: 2px solid#F20530;
+    color: #fff;
+    padding: 12px;
+}
+
+footer i {
+    color: #fff;
+    margin: 9px;
+}
+
+.general-sub {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+}
