@@ -18,7 +18,7 @@
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
      id="defs6" /><sodipodi:namedview
-     pagecolor="#ffffff"
+     pagecolor="#026873"
      bordercolor="#666666"
      borderopacity="1"
      objecttolerance="10"
@@ -36,7 +36,7 @@
        id="g12"
        transform="scale(0.1)"><path
          d="M 0,0 V 44040.4 H 35574.1 V 0 H 0"
-         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="fill:#026873;fill-opacity:1;fill-rule:nonzero;stroke:none"
          id="path14" /><path
          d="M 34358.6,6315.6 H 1230.34 V 39443.8 H 34358.6 V 6315.6"
          style="fill:#f9e028;fill-opacity:1;fill-rule:nonzero;stroke:none"
