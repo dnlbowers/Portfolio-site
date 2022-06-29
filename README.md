@@ -5,4 +5,4 @@
 
 # currently working on
 
-* 2.1 Create the Heroku app  
+* base.css not working 
