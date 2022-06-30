@@ -6,20 +6,36 @@
     padding: 0;   
 }
 
+/* --------------------------------------------- Text colors */
+
+
+
 /* --------------------------------------------- Background colors */
-.navbar-bg {
+.navbar {
+    min-height: 144px;
+}
+
+.bg-black {
     background-color: #0D0500;
-    border-bottom: 2px solid #F20530;
-    height: 144px;
 }
 
 .hero-bg {
     background-color: #026873;
-    display: flex;
+    
 }
 .main-bg {
     background-color: #026873;
-    display: flex;
+    
+}
+
+/* --------------------------------------------- Borders */
+
+.border-top-red {
+    border-top: 2px solid#F20530;
+}
+
+.boarder-bot-red {
+    border-bottom: 2px solid #F20530;
 }
 
 /* --------------------------------------------- Navbar */
@@ -29,25 +45,27 @@
     font-weight: 700;
 }
 
-.navbar a {
-    color: #fff;
+#title {
+    color: #F20530;
+    font-size: 2rem;
+    text-shadow: -2px 4px #28397d; 
 }
 
-.burger-menu {
-    color: #fff;
+.navbar-toggler {
+    font-size: 2rem; 
 }
 
 .content-index {
     background-color: #F2D541;
     border: 6px solid;
     border-radius: 10px;
-    margin: 3%;
+    margin: 2%;
     height: auto;
     padding: 20px;
 }
 
 #drop-bg-1 {
-    background-color: #F2D541;
+    background-color: #28397d;
 }
 
 #drop-bg-2 {
@@ -59,7 +77,6 @@
 }
 
 #index-Portfolio-btn {
-    color: #fff;
     border: 2px solid #000;
     background-color: #004a52;
     margin: 0 auto;
@@ -69,18 +86,16 @@
 /* --------------------------------------------- Footer */
 
 footer {
-    background-color: #0D0500;
-    border-top: 2px solid#F20530;
-    color: #fff;
     padding: 12px;
 }
 
 footer i {
-    color: #fff;
     margin: 9px;
 }
 
 .general-sub {
+    color: #F20530;
     font-family: 'DM Sans', sans-serif;
     font-weight: 700;
+    text-decoration: underline;
 }

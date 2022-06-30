@@ -1,11 +1,13 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
     <head>
         {% include 'includes/layout/head.html' %}
     </head>
-    <body>
-        {% include 'includes/components/navbar.html' %}
+    <body class="d-flex flex-column h-100 main-bg">
+        <header>
+            {% include 'includes/components/navbar.html' %}
+        </header>
         {% block content %}
         {% endblock  %}
         {% include 'includes/components/footer.html' %}
