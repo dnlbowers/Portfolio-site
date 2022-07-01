@@ -5,4 +5,4 @@
 
 # currently working on
 
-* base.css not working 
+write tests for home view. Then start new app  

@@ -7,7 +7,9 @@
 }
 
 /* --------------------------------------------- Text colors */
-
+.text-red {
+    color: #F20530;
+}
 
 
 /* --------------------------------------------- Background colors */
@@ -31,7 +33,7 @@
 /* --------------------------------------------- Borders */
 
 .border-top-red {
-    border-top: 2px solid#F20530;
+    border-top: 2px solid #F20530;
 }
 
 .boarder-bot-red {
@@ -46,7 +48,6 @@
 }
 
 #title {
-    color: #F20530;
     font-size: 2rem;
     text-shadow: -2px 4px #28397d; 
 }
@@ -65,11 +66,11 @@
 }
 
 #drop-bg-1 {
-    background-color: #28397d;
+    background-color: #004a52;
 }
 
 #drop-bg-2 {
-    background-color: #004a52;
+    background-color: #28397d;
 }
 
 #drop-bg-3 {
@@ -94,7 +95,6 @@ footer i {
 }
 
 .general-sub {
-    color: #F20530;
     font-family: 'DM Sans', sans-serif;
     font-weight: 700;
     text-decoration: underline;
