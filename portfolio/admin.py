@@ -16,6 +16,8 @@ class ProjectAdmin(SummernoteModelAdmin):
     actions = ['make_public', 'hide_project', 'make_coming_soon']
     prepopulated_fields = {'slug': ('title',)}
 
+    ordering = ('completion_date',)
+
     def make_public(self, request, queryset):
         """
         Makes selected projects public

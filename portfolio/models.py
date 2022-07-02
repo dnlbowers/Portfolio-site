@@ -20,8 +20,9 @@ class Project(models.Model):
     project_type = models.IntegerField(choices=TYPE, default=0)
     
 
-    class mete:
+    class meta:
         ordering = ['-completion_date']
+        verbose_name_plural = 'projects'
 
     def __str__(self):
         return self.title

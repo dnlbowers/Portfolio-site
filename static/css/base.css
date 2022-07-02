@@ -30,6 +30,10 @@
     
 }
 
+.opacity-bg {
+    opacity: .8;
+}
+
 /* --------------------------------------------- Borders */
 
 .border-top-red {
@@ -99,3 +103,7 @@ footer i {
     font-weight: 700;
     text-decoration: underline;
 }
+
+.carousel-inner > .carousel-item > img {
+    max-height:650px;
+  }
