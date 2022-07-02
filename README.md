@@ -5,4 +5,6 @@
 
 # currently working on
 
-write tests for home view. Then start new app  
+Display portfolio projects on portfolio page in the template, do I need a context? 
+
+do I need the sr only on the nav home button?

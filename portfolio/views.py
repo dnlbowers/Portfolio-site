@@ -1,3 +1,8 @@
-from django.shortcuts import render
+from django.views.generic.base import TemplateView
 
-# Create your views here.
+
+class PortfolioPage(TemplateView):
+    """"
+    View to return index page
+    """
+    template_name = 'portfolio/portfolio.html'
