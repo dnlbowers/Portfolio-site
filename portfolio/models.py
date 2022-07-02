@@ -15,7 +15,7 @@ class Project(models.Model):
     slug = models.SlugField(max_length=255, unique=True, blank=True)
     hosted_url = models.URLField(max_length=200, blank=True)
     repo_url = models.URLField(max_length=200, blank=True)
-    screenshot = models.ImageField(upload_to='media/portfolio-screenshots/', blank=True)
+    screenshot = models.ImageField(upload_to='portfolio-screenshots/', blank=True)
     completion_date = models.DateField(blank=True, null=True)
     project_type = models.IntegerField(choices=TYPE, default=0)
     
