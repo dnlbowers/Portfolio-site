@@ -7,4 +7,10 @@
 
 Display portfolio projects on portfolio page in the template, do I need a context? 
 
-do I need the sr only on the nav home button?
+Make project image a link to the project, maybe change the url on the carosel to github link? is the interval ok?
+
+add heading and description on the portfolio page using slug as url value
+
+give each project its own self containing page with full description?
+
+

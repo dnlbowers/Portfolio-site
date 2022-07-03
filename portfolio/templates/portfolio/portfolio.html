@@ -4,14 +4,12 @@
 {% block content %}
 <main>
     <div class="main-bg">
-        {% comment %} {{ projects }}
-        {% for project in projects  %}
-            <img src="/media/{{ project.screenshot }}" class="d-block w-100" alt="...">
-        {% endfor %}  {% endcomment %}
-        <div class="content-index h-100">
-            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        
+        <div class="content-index">
+                        
+            <div id="carouselExampleCaptions" class="carousel slide mx-auto" data-ride="carousel">
                 
-                <ol class="carousel-indicators bg-black opacity-bg">
+                <ol class="carousel-indicators bg-black">
                     {% for project in projects  %}
                         <li data-target="#carouselExampleCaptions" data-slide-to="{{forloop.counter0}}" {% if forloop.first %}class="active"{% endif %}></li>
                     {% endfor %}
@@ -19,21 +17,21 @@
                 <div class="carousel-inner">
                     {% for project in projects  %}
                         <div class="carousel-item {% if forloop.first %}active{% endif %}">
-                            <img src="/media/{{ project.screenshot }}" class="d-block w-100" alt="{{ project.title }}">
+                            <a href="" aria-label="Check out the deployed version of my {{ project.title }} project"><img src="/media/{{ project.screenshot }}" class="d-block w-100" alt="{{ project.title }}"></a>
                             <div class="carousel-caption d-none d-md-block">
                                 <div>
                                     <h5 class="bg-black opacity-bg d-inline">{{ project.title }}</h5>
                                 </div>
-                                <a class="bg-black opacity-bg text-white" href="{{ project.hosted_url }}" target="_blank" rel="noopener" aria-label="Check out the deployed version of my {{ project.title }} project">{{ project.hosted_url }}</a>
+                                <p class="bg-black opacity-bg text-white">Click the image for more info on this project</p>
                             </div>
                         </div>
                     {% endfor %}
                 </div>
-                <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+                <button class="carousel-control-prev bg-black" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+                <button class="carousel-control-next bg-black" type="button" data-target="#carouselExampleCaptions" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </button>
