@@ -8,7 +8,7 @@
     <div class="carousel-inner">
         {% for project in projects  %}
             <div class="carousel-item {% if forloop.first %}active{% endif %}">
-                <a href="" aria-label="Check out the deployed version of my {{ project.title }} project"><img src="/media/{{ project.screenshot }}" class="d-block w-100" alt="{{ project.title }}"></a>
+                <a href="{{ project.hosted_url }}" target="_blank" rel="noopener" aria-label="click image to view {{ project.title }} in a new browser tab (hosted on third party site.)"><img src="/media/{{ project.screenshot }}" class="d-block w-100" alt="{{ project.title }}"></a>
                 <div class="carousel-caption d-none d-md-block">
                     <div>
                         <h5 class="bg-black opacity-bg d-inline">{{ project.title }}</h5>

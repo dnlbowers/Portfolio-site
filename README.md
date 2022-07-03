@@ -5,12 +5,9 @@
 
 # currently working on
 
-Display portfolio projects on portfolio page in the template, do I need a context? 
-
-Make project image a link to the project, maybe change the url on the carosel to github link? is the interval ok?
-
-add heading and description on the portfolio page using slug as url value
-
-give each project its own self containing page with full description?
+Consider if carousel should be outside yellow back ground.
+write content for homepage, remove blog for now and make contact page
+they deploy with s3 bucket as mvp
+work on pricing and stripe next
 
 
