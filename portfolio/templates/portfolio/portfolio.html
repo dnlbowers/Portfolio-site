@@ -4,35 +4,28 @@
 {% block content %}
 <main>
     <div class="main-bg">
-        <div class="p-3">
-            <div class="container-fluid mx-auto content-index">
-                <div class="container">
-                    <h1 class="font-weight-bolder text-center">Recent Projects</h1>
-                    <p class="m-3">
-                        Below are a collection of my recent projects. 
-                        Although I have been self-learning various coding languages for years, 
-                        below is an amalgamation of some of my more recent learning. 
-                        I am currently learning, growing, and improving my skillsets, 
-                        so everything here will likely evolve soon. Any suggestions for improvements to your user experience are welcomed, 
-                        so please contact me via the contact page.
-                    </p>
-                    <p class="m-3">
-                        For more details about each project and my source code, visit 
-                        <a href="https://github/dnlbowers" target="_blank" rel="noopener" aria-label="Visit my github page(opens in new tab)">
-                            my GitHub Profile
-                        <a/>   
-                    </p>
-                    <p class="m-3">
-                        The other option? Skip the details and enjoy the final product by clicking the relevant button to launch the project.
-                    </p>
-                </div>
-                {% comment %} <div class="container mb-2 pt-2 pb-2 main-bg"> {% endcomment %}
-                    {% include 'portfolio/includes/components/portfolio-carousel.html' %}
-                {% comment %} </div> {% endcomment %}
-                {% comment %} <div class="container-fluid mx-auto content-index"> {% endcomment %}
-                    
-                    
-                {% comment %} </div> {% endcomment %}
+        <div>
+            <div class="container pb-5 pl-md-5 pr-md-5 mx-auto content-index">
+                <h1 class="font-weight-bolder text-center p-3">Recent Projects</h1>
+                <p class="m-3">
+                    Below are a collection of my recent projects. 
+                    Although I have been self-learning various coding languages for years, 
+                    below is an amalgamation of some of my more recent learning. 
+                    I am currently learning, growing, and improving my skillsets, 
+                    so everything here will likely evolve soon. Any suggestions for improvements to your user experience are welcomed, 
+                    so please contact me via the contact page.
+                </p>
+                <p class="m-3">
+                    For more details about each project and my source code, visit 
+                    <a href="https://github/dnlbowers" target="_blank" rel="noopener" aria-label="Visit my github page(opens in new tab)">
+                        my GitHub Profile
+                    <a/>   
+                </p>
+                <p class="m-3 pb-3">
+                    The other option? Skip the details and enjoy the final product by clicking the relevant button to launch the project.
+                </p>
+                
+                {% include 'portfolio/includes/components/portfolio-carousel.html' %}
             </div>
         </div>
     </div>

@@ -4,30 +4,33 @@
 
 {% block content %}
 <main>
-    <div class="row no-gutters">
-        <div class="main-bg d-flex col-md-6 col-xl-5">
-            <img id="hero" class="img-fluid" src="/media/super-ideas.svg" alt="super ideas require super solutions">
-        </div>
-        <div class="main-bg d-flex col-md-6 col-xl-7">
-            <article class="content-index">
-                <h1 class="text-center">Hello, world!</h1>
-                <p>
-                    My name is David and I am now and always will be a developing developer. Even when I have mastered 100
-                    languages
-                    I still hope to be able to refer to myself as developing as in my opinion if the knowledge required for
-                    development
-                    doesn't increase as my experience expands, then my peers and I are not doing a good enough job at innovating
-                    in the field.
-                </p>
-                <p class="text-center">
-                    To see more of my work click the button below to be taken to my portfolio
-                </p>
-                <div class="text-center">
-                    <a id="index-Portfolio-btn" class="btn btn-lg text-light" href="{% url 'portfolio' %}" role="button">
-                        My Portfolio
-                    </a>
-                </div>
-            </article>
+    <div class="container-fluid m-md-2">
+        <div class="row no-gutters">
+            
+            <div class="main-bg d-flex col-md-6 col-xl-7">
+                <article class="content-index m-lg-3">
+                    <h1 class="text-center">Hello, world!</h1>
+                    <p>
+                        My name is David and I am now and always will be a developing developer. Even when I have mastered 100
+                        languages
+                        I still hope to be able to refer to myself as developing as in my opinion if the knowledge required for
+                        development
+                        doesn't increase as my experience expands, then my peers and I are not doing a good enough job at innovating
+                        in the field.
+                    </p>
+                    <p class="text-center">
+                        To see more of my work click the button below to be taken to my portfolio
+                    </p>
+                    <div class="text-center">
+                        <a id="index-Portfolio-btn" class="btn btn-lg text-light" href="{% url 'portfolio' %}" role="button">
+                            My Portfolio
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="main-bg d-flex col-md-6 col-xl-5">
+                <img id="hero" class="img-fluid" src="/media/super-ideas.svg" alt="super ideas require super solutions">
+            </div>
         </div>
     </div>
 </main>
