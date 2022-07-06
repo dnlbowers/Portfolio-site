@@ -5,9 +5,15 @@
 
 # currently working on
 
-Consider if carousel should be outside yellow back ground.
 write content for homepage, remove blog for now and make contact page
 they deploy with s3 bucket as mvp
 work on pricing and stripe next
 
 
+# need to work on
+deploy with aws
+allauth log in pages
+Pricing,
+Members area - upload files, download files
+profile
+contact page

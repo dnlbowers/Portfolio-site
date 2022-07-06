@@ -46,6 +46,10 @@
     border-bottom: 2px solid #F20530;
 }
 
+.border-five {
+    border: black 5px solid;
+}
+
 /* ------------------------------------------------------------- headings */
 .content-index > h1 {
     font-size: 25px;
@@ -83,8 +87,8 @@
     background-color: #004a52;
 }
 
-#drop-bg-2 {
-    background-color: #28397d;
+.drop-bg-2 {
+    background-color: #28397d !important;
 }
 
 #drop-bg-3 {
@@ -121,7 +125,6 @@ footer i {
 /* ----------------------------------------------- Portfolio carousel */
 
 #carouselExampleCaptions {
-    border: black 5px solid;
     max-width: 1000px;
 }
 
