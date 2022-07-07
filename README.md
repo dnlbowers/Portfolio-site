@@ -11,6 +11,7 @@ work on pricing and stripe next
 
 
 # need to work on
+change about section, link CV
 deploy with aws
 allauth log in pages
 Pricing,
