@@ -78,8 +78,6 @@
     background-color: #F2D541;
     border: 6px solid;
     border-radius: 10px;
-    /* margin: 2%; */
-    height: auto;
     padding: 20px;
 }
 
@@ -95,7 +93,7 @@
     background-color: #F20530 !important;
 }
 
-#index-Portfolio-btn {
+.green-btn {
     border: 2px solid #000;
     background-color: #004a52;
     margin: 0 auto;

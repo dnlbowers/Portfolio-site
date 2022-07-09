@@ -5,7 +5,9 @@
 {% block content %}
 <main class="container-fluid py-4 px-1">
     <div class="row no-gutters">
-        
+        <div class="main-bg d-flex col-md-6 col-xl-5">
+            <img id="hero" class="img-fluid" src="/media/super-ideas.svg" alt="super ideas require super solutions">
+        </div>
         <div class="main-bg d-flex col-md-6 col-xl-7">
             <article class="content-index m-lg-3">
                 <h1 class="text-center">Hello World!</h1>
@@ -21,15 +23,13 @@
                     To see more of my work click the button below to be taken to my evolving portfolio gallery.
                 </p>
                 <div class="text-center">
-                    <a id="index-Portfolio-btn" class="btn btn-lg text-light" href="{% url 'portfolio' %}" role="button">
+                    <a class="btn btn-lg text-light green-btn" href="{% url 'portfolio' %}" role="button">
                         My Portfolio
                     </a>
                 </div>
             </article>
         </div>
-        <div class="main-bg d-flex col-md-6 col-xl-5">
-            <img id="hero" class="img-fluid" src="/media/super-ideas.svg" alt="super ideas require super solutions">
-        </div>
+
     </div>
 </main>
 {% endblock %}

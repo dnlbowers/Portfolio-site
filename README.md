@@ -13,7 +13,7 @@ work on pricing and stripe next
 # need to work on
 change about section, link CV
 deploy with aws
-allauth log in pages
+allauth template pages
 Pricing,
 Members area - upload files, download files
 profile
