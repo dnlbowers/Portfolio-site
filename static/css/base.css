@@ -83,16 +83,16 @@
     padding: 20px;
 }
 
-#drop-bg-1 {
-    background-color: #004a52;
+.drop-bg-1 {
+    background-color: #004a52 !important;
 }
 
 .drop-bg-2 {
     background-color: #28397d !important;
 }
 
-#drop-bg-3 {
-    background-color: #F20530;
+.drop-bg-3 {
+    background-color: #F20530 !important;
 }
 
 #index-Portfolio-btn {
