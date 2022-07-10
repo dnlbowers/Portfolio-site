@@ -11,9 +11,10 @@ work on pricing and stripe next
 
 
 # need to work on
+check about emails
 change about section, link CV
 deploy with aws
-allauth template pages
+allauth template pages - add widget tweaks for forms
 Pricing,
 Members area - upload files, download files
 profile
