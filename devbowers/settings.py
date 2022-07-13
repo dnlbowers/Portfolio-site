@@ -51,7 +51,17 @@ INSTALLED_APPS = [
 
 SITE_ID = 1
 
-LOGIN_REDIRECT_URL = '/'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' # prints email verification to console
+
+ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+ACCOUNT_SIGNUP_PASSWORD_ENTER_TWICE = True
+ACCOUNT_USERNAME_MIN_LENGTH = 4
+ACCOUNT_USERNAME_BLACKLIST = ['django', 'admin', 'root']
+LOGIN_URL = '/accounts/login/'
+
+LOGIN_REDIRECT_URL = '/'  # will be the account page
 LOGOUT_REDIRECT_URL = '/'
 
 MIDDLEWARE = [

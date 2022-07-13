@@ -19,3 +19,4 @@ Pricing,
 Members area - upload files, download files
 profile
 contact page
+Email confirmation and verfication_sent templates, align text in container still
