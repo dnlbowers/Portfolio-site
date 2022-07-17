@@ -19,4 +19,36 @@ Pricing,
 Members area - upload files, download files
 profile
 contact page
-Email confirmation and verfication_sent templates, align text in container still
+Email confirmation and verification_sent templates, align text in container still
+
+# draft for client_account models
+
+ProjectDetails model:
+user - many to many
+project_name
+project_due_date
+
+Costings model:
+Planning_design_quote
+development_quotation
+deployment_quotation
+hosting_quotation
+maintenance_agreement_is_place - boolean
+maintenance_fee
+additional_expenses
+current_cost
+paid_to_date
+remaining balance
+Max budget
+
+ProjectFiles Model:
+related project
+Initial_contract
+wireframes
+color_mockup null = true
+planning_doc - null = true
+official_doc - null = true
+repo_location
+
+ProjectNotes model:
+related_project FK
