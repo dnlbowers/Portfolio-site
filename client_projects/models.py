@@ -30,6 +30,9 @@ class Requirements(models.Model):
     offical_document = models.BooleanField(default=False)
     front_end = models.BooleanField(default=False)
     back_end = models.BooleanField(default=False)
+    deployment = models.BooleanField(default=False)
+    hosting = models.BooleanField(default=False)
+    maintenance = models.BooleanField(default=False)
 
 
 

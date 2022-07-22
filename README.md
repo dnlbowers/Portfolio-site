@@ -5,6 +5,8 @@
 
 # currently working on
 
+Models for client project and client account. profile?
+
 write content for homepage, remove blog for now and make contact page
 they deploy with s3 bucket as mvp
 work on pricing and stripe next
@@ -23,12 +25,23 @@ Email confirmation and verification_sent templates, align text in container stil
 
 # draft for client_account models
 
+## Done
 ProjectDetails model:
 user - one to many
 project_name
 Project_ID
 project_due_date
 
+ProjectFiles Model:
+poject_ID
+Initial_contract
+wireframes
+color_mockup null = true
+planning_doc - null = true
+official_doc - null = true
+repo_location
+
+## to do
 Costings model:
 project_ID UUID
 Planning_design_quote
@@ -44,14 +57,7 @@ paid_to_date
 remaining balance
 Max budget
 
-ProjectFiles Model:
-poject_ID
-Initial_contract
-wireframes
-color_mockup null = true
-planning_doc - null = true
-official_doc - null = true
-repo_location
+
 
 ProjectNotes model:
 related_project FK
