@@ -24,16 +24,19 @@ Email confirmation and verification_sent templates, align text in container stil
 # draft for client_account models
 
 ProjectDetails model:
-user - many to many
+user - one to many
 project_name
+Project_ID
 project_due_date
 
 Costings model:
+project_ID UUID
 Planning_design_quote
 development_quotation
 deployment_quotation
+hosting_agreement_inplace
 hosting_quotation
-maintenance_agreement_is_place - boolean
+maintenance_agreement_in_place - boolean
 maintenance_fee
 additional_expenses
 current_cost
@@ -42,7 +45,7 @@ remaining balance
 Max budget
 
 ProjectFiles Model:
-related project
+poject_ID
 Initial_contract
 wireframes
 color_mockup null = true
