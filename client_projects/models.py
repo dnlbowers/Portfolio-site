@@ -10,28 +10,31 @@ class ClientProject(models.Model):
     client = models.ForeignKey(User, on_delete=models.CASCADE)
     name = models.CharField(max_length=255)
     slug = models.SlugField(max_length=255, unique=True, blank=True)
-    description = models.TextField()
+    Summary = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
     due_date = models.DateField(blank=True, null=True)
+    grant_access_to = models.ManyToManyField(User, related_name="permitted_to_access")
     
     def __str__(self):
         return self.name
 
     def save(self, *args, **kwargs):
         self.slug = slugify(self.name)
+        self.grant_access_to.add(self.client)
         super(ClientProject, self).save(*args, **kwargs)
 
 
 class Requirements(models.Model):
     project = models.ForeignKey(ClientProject, on_delete=models.CASCADE)
     design_document = models.BooleanField(default=False)
-    wireframe_design = models.BooleanField(default=False)
+    wireframes_design = models.BooleanField(default=False)
     mockup_design = models.BooleanField(default=False)
-    offical_document = models.BooleanField(default=False)
+    official_document = models.BooleanField(default=False)
     front_end = models.BooleanField(default=False)
     back_end = models.BooleanField(default=False)
     deployment = models.BooleanField(default=False)
     hosting = models.BooleanField(default=False)
+    domain = models.BooleanField(default=False)
     maintenance = models.BooleanField(default=False)
 
 
@@ -46,3 +49,4 @@ class ProjectFiles(models.Model):
     planning_docs = models.FileField(upload_to='planning_docs/', blank=True, null=True)
     official_docs = models.FileField(upload_to='official_docs/', blank=True, null=True)
     repo_location =models.URLField(max_length=2000, blank=True, null=True)
+    deployed_url = models.URLField(max_length=2000, blank=True, null=True)
