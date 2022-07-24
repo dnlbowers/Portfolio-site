@@ -6,10 +6,10 @@ import uuid
 
 # Create your models here.
 class ClientProject(models.Model):
-    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    project_id = models.CharField(max_length=32, null=False, editable=False, unique=True)
     client = models.ForeignKey(User, on_delete=models.CASCADE)
     name = models.CharField(max_length=255)
-    slug = models.SlugField(max_length=255, unique=True, blank=True)
+    slug = models.SlugField(max_length=255)
     Summary = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
     due_date = models.DateField(blank=True, null=True)
@@ -18,10 +18,17 @@ class ClientProject(models.Model):
     def __str__(self):
         return self.name
 
+    def _generate_project_id(self):
+        """
+        Generate a random, unique order number using UUID
+        """
+        return uuid.uuid4().hex.upper()
+
     def save(self, *args, **kwargs):
         self.slug = slugify(self.name)
-        self.grant_access_to.add(self.client)
-        super(ClientProject, self).save(*args, **kwargs)
+        if not self.project_id:
+            self.project_id = self._generate_project_id()
+        super().save(*args, **kwargs)
 
 
 class Requirements(models.Model):
