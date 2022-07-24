@@ -9,7 +9,12 @@ class ProjectAdmin(SummernoteModelAdmin):
     """
     Allows admin to edit project via admin panel
     """
-    list_display = ('title', 'status', 'hosted_url', 'completion_date', 'project_type')
+    list_display = (
+        'title',
+        'status',
+        'hosted_url',
+        'completion_date',
+        'project_type')
     list_filter = ('status', 'project_type')
     search_fields = ('title', 'description', 'status', 'project_type')
     summernote_fields = ('description',)
@@ -23,7 +28,7 @@ class ProjectAdmin(SummernoteModelAdmin):
         Makes selected projects public
         """
         queryset.update(status=1)
-    
+
     def hide_project(self, request, queryset):
         """
         Makes selected projects hidden
@@ -35,4 +40,3 @@ class ProjectAdmin(SummernoteModelAdmin):
         Makes selected projects coming soon
         """
         queryset.update(status=2)
-    

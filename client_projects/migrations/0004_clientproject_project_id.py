@@ -14,7 +14,10 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='clientproject',
             name='project_id',
-            field=models.CharField(default=django.utils.timezone.now, editable=False, max_length=32),
+            field=models.CharField(
+                default=django.utils.timezone.now,
+                editable=False,
+                max_length=32),
             preserve_default=False,
         ),
     ]

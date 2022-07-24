@@ -13,6 +13,8 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='project',
             name='screenshot',
-            field=models.ImageField(blank=True, upload_to='portfolio-screenshots/'),
+            field=models.ImageField(
+                blank=True,
+                upload_to='portfolio-screenshots/'),
         ),
     ]
